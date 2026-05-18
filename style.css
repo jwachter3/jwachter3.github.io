@@ -1,0 +1,187 @@
+:root {
+  --text: #1f2328;
+  --muted: #57606a;
+  --rule: #d8dde3;
+  --link: #2c5282;
+  --link-hover: #1a365d;
+  --bg: #fdfcf9;
+  --max-width: 46rem;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 17px; }
+
+body {
+  margin: 0;
+  padding: 3rem 1.25rem 6rem;
+  font-family: "Charter", "Iowan Old Style", "Palatino", "Georgia", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(44, 82, 130, 0.25);
+  transition: color 0.12s, border-color 0.12s;
+}
+
+a:hover {
+  color: var(--link-hover);
+  border-bottom-color: var(--link-hover);
+}
+
+a[href="#"] {
+  color: var(--muted);
+  border-bottom-style: dotted;
+  border-bottom-color: var(--muted);
+}
+
+/* ---------- bio header ---------- */
+
+.bio {
+  margin-bottom: 2.5rem;
+}
+
+.bio h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 0.25rem;
+}
+
+.bio .title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.bio .affiliation {
+  margin: 0.1rem 0 1rem;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.bio .contact {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.bio .contact a {
+  color: var(--link);
+}
+
+.bio .nav-links {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* ---------- sections ---------- */
+
+section {
+  margin-top: 2.75rem;
+}
+
+#overview {
+  margin-top: 1.5rem;
+  font-size: 1.02rem;
+}
+
+#overview p {
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- paper list ---------- */
+
+ol.papers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: paper;
+}
+
+ol.papers > li {
+  position: relative;
+  margin: 0 0 1.5rem;
+  padding-left: 0;
+}
+
+ol.papers > li:last-child {
+  margin-bottom: 0;
+}
+
+.paper-title {
+  display: block;
+  font-weight: 600;
+  font-size: 1.02rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.authors {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.15rem;
+}
+
+.meta {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.links {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.35rem;
+  color: var(--muted);
+}
+
+.links a {
+  font-variant: small-caps;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- footer ---------- */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 40rem) {
+  body { padding: 2rem 1rem 4rem; }
+  html { font-size: 16px; }
+  .bio h1 { font-size: 1.7rem; }
+}
