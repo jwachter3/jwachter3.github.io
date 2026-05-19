@@ -10,7 +10,10 @@
 
 * { box-sizing: border-box; }
 
-html { font-size: 17px; }
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -85,6 +88,29 @@ a[href="#"] {
 .bio .nav-links {
   margin: 0;
   font-size: 1rem;
+}
+
+/* ---------- section nav (jump-to-section bar under the bio) ---------- */
+
+.section-nav {
+  margin: 1.5rem 0 0;
+  padding: 0.6rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 1rem;
+  text-align: center;
+  color: var(--muted);
+}
+
+.section-nav a {
+  display: inline-block;
+  margin: 0 0.4rem;
+  border-bottom: none;
+  font-weight: 600;
+}
+
+.section-nav a:hover {
+  border-bottom: 1px solid var(--link-hover);
 }
 
 /* ---------- sections ---------- */
