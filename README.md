@@ -20,6 +20,20 @@ To add a paper, copy one of the `<li>` blocks in `index.html` and edit in place.
 gray so they're easy to spot. Replace each with the real URL — either an SSRN
 abstract page, a publisher DOI, or a PDF you drop into the repo.
 
+## Unlisted AI paper draft
+
+The current AI paper is available at
+`https://jwachter3.github.io/research/ai-transition/current-draft.pdf`.
+This is a public, shareable URL with no link from the main page or the workbook
+page. Keep the URL stable when Jessica requests a refreshed draft.
+
+Source: `~/Projects/Research/rare-ai-growth/aiv09.pdf`. The October 12, 2026
+upload is the 78-page revised v09 reviewed on October 11 (paper changes in
+research commit `0216bc4`). After a future approved refresh, copy the verified
+paper PDF to `research/ai-transition/current-draft.pdf`, commit and push, then
+verify that the deployed file matches the source. Do not use the older blinded
+JFE submission build.
+
 ## Local preview
 
 Open `index.html` in a browser, or run:
